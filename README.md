@@ -42,13 +42,13 @@
     }
 
     header img.logo {
-      max-height: 120px;
-      margin-bottom: 20px;
-      background-color: transparent;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  max-height: 120px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
+}
 
     header h1 {
       margin: 10px 0 10px;
