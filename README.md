@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stratosphere Aviation Detailing Services</title>
+  <title>Stratosphere Aviation Detailing</title>
   <meta name="description" content="Premium aircraft detailing across Southeast Queensland and Northern NSW. Specialising in private, training, and FBO contracts." />
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
@@ -29,24 +29,28 @@
     header {
       background: var(--primary-color);
       color: var(--text-light);
-      padding: 40px 20px;
+      padding: 80px 20px 60px;
       text-align: center;
       position: relative;
     }
 
     header img {
-      max-height: 80px;
-      margin-bottom: 10px;
+      max-height: 120px;
+      margin-bottom: 20px;
+      background-color: transparent;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     header h1 {
-      margin: 10px 0 5px;
-      font-size: 2.5em;
+      margin: 10px 0 10px;
+      font-size: 3em;
     }
 
     header p {
       margin: 0;
-      font-size: 1.2em;
+      font-size: 1.3em;
     }
 
     nav {
