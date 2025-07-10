@@ -7,51 +7,50 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f8fa;
-      color: #1a1a1a;
       margin: 0;
       padding: 0;
+      background: #f5f5f5;
+      color: #333;
     }
-
     header {
-      background-color: #002244;
+      background: #001f3f;
       color: white;
       padding: 40px 20px;
       text-align: center;
     }
-
-    main {
-      padding: 20px;
-      max-width: 800px;
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+    nav {
+      background: #004080;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
       margin: auto;
     }
-
-    section {
-      margin-bottom: 30px;
+    .photos img {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
     }
-
     footer {
-      background-color: #002244;
+      background: #001f3f;
       color: white;
       text-align: center;
-      padding: 10px;
-      font-size: 14px;
-    }
-
-    a {
-      color: #004b91;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 20px auto;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -59,35 +58,50 @@
 
   <header>
     <h1>Stratosphere Aviation Detailing</h1>
-    <p>Precision | Presentation | Performance</p>
+    <p>Premium aircraft detailing across SE QLD and Northern NSW</p>
   </header>
 
-  <main>
-    <section>
-      <h2>About Us</h2>
-      <p>Stratosphere Aviation Detailing provides professional aircraft detailing services to FBOs, charter operators, flying schools, and private owners across Southeast Queensland and Northern NSW. We pride ourselves on safety, reliability, and immaculate finishes — inside and out.</p>
-    </section>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#photos">Photos</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section>
-      <h2>Our Services</h2>
-      <ul>
-        <li>Exterior Dry Wash & Polish</li>
-        <li>Interior Deep Cleaning & Disinfection</li>
-        <li>Cabin Detailing & Leather Conditioning</li>
-        <li>Oxidation Removal & Brightwork Polishing</li>
-        <li>Biohazard Cleanup (FAA/EASA-compliant)</li>
-      </ul>
-    </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Stratosphere Aviation Detailing provides elite cleaning and detailing for light aircraft, flying schools, FBOs, maintenance hangars and private owners across southeast Queensland and northern New South Wales. With rapid call-outs and a commitment to quality, we leave every aircraft gleaming and airworthy.</p>
+  </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email us at <a href="mailto:info@stratosphereaviationdetailing.com.au">info@stratosphereaviationdetailing.com.au</a></p>
-      <p>Call: 0400 000 000</p>
-    </section>
-  </main>
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Interior & exterior aircraft cleaning</li>
+      <li>Paintwork polishing and protection</li>
+      <li>Brightwork & plexiglass polishing</li>
+      <li>Cabin deodorising and deep cleaning</li>
+      <li>FBO and flying school contracts</li>
+      <li>Emergency / short-notice callouts</li>
+    </ul>
+  </section>
+
+  <section id="photos" class="photos">
+    <h2>Our Work</h2>
+    <p>Here are a few examples of aircraft we've serviced:</p>
+    <img src="https://via.placeholder.com/400x250?text=Aircraft+Photo+1" alt="Aircraft 1">
+    <img src="https://via.placeholder.com/400x250?text=Aircraft+Photo+2" alt="Aircraft 2">
+    <img src="https://via.placeholder.com/400x250?text=Aircraft+Photo+3" alt="Aircraft 3">
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> <a href="mailto:gary@stratosphereaviationdetailing.com.au">gary@stratosphereaviationdetailing.com.au</a></p>
+    <p><strong>Phone:</strong> 0412 345 678</p>
+    <p><strong>Location:</strong> Gold Coast, QLD, Australia</p>
+  </section>
 
   <footer>
-    &copy; 2025 Stratosphere Aviation Detailing · All rights reserved
+    <p>&copy; 2025 Stratosphere Aviation Detailing. All rights reserved.</p>
   </footer>
 
 </body>
