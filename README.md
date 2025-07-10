@@ -113,12 +113,12 @@
       transform: scale(1.03);
     }
 
-    .services-image {
+    .services-image, .products-image {
       text-align: center;
       margin-top: 30px;
     }
 
-    .services-image img {
+    .services-image img, .products-image img {
       width: 100%;
       max-width: 700px;
       border-radius: 10px;
@@ -216,6 +216,7 @@
     <a href="#">Home</a>
     <a href="#services">Services</a>
     <a href="#photos">Photos</a>
+    <a href="#products">Products</a>
     <a href="#coverage">Coverage</a>
     <a href="#contact">Contact</a>
     <a href="#book">Book Now</a>
@@ -238,6 +239,14 @@
     </ul>
     <div class="services-image">
       <img src="services-photo.jpg" alt="Stratosphere Aviation Services">
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <p>We use and recommend professional-grade aviation-safe products for cleaning, polishing, and protecting your aircraft surfaces.</p>
+    <div class="products-image">
+      <img src="products-photo.jpg" alt="Detailing Products">
     </div>
   </section>
 
