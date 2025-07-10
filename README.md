@@ -29,12 +29,19 @@
     header {
       background: var(--primary-color);
       color: var(--text-light);
-      padding: 80px 20px 60px;
+      padding: 40px 20px 60px;
       text-align: center;
       position: relative;
     }
 
-    header img {
+    .header-photo {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    header img.logo {
       max-height: 120px;
       margin-bottom: 20px;
       background-color: transparent;
@@ -207,7 +214,8 @@
   </a>
 
   <header>
-    <img src="logo.png" alt="Stratosphere Logo">
+    <img src="header-photo.jpg" alt="Aircraft Detailing Banner" class="header-photo">
+    <img src="logo.png" alt="Stratosphere Logo" class="logo">
     <h1>Stratosphere Aviation Detailing</h1>
     <p>Premium aircraft detailing across SE QLD and Northern NSW</p>
   </header>
@@ -221,80 +229,3 @@
     <a href="#contact">Contact</a>
     <a href="#book">Book Now</a>
   </nav>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Stratosphere Aviation Detailing provides elite cleaning and detailing for light aircraft, flying schools, FBOs, maintenance hangars and private owners across Southeast Queensland and Northern New South Wales. With rapid call-outs and a commitment to quality, we leave every aircraft gleaming and airworthy.</p>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Interior & exterior aircraft cleaning</li>
-      <li>Paintwork polishing and protection</li>
-      <li>Brightwork & plexiglass polishing</li>
-      <li>Cabin deodorising and deep cleaning</li>
-      <li>FBO and flying school contracts</li>
-      <li>Emergency / short-notice callouts</li>
-    </ul>
-    <div class="services-image">
-      <img src="services-photo.jpg" alt="Stratosphere Aviation Services">
-    </div>
-  </section>
-
-  <section id="products">
-    <h2>Our Products</h2>
-    <p>We use and recommend professional-grade aviation-safe products for cleaning, polishing, and protecting your aircraft surfaces.</p>
-    <div class="products-image">
-      <img src="products-photo.jpg" alt="Detailing Products">
-    </div>
-  </section>
-
-  <section id="photos" class="photos">
-    <h2>Our Work</h2>
-    <img src="ourwork1.jpg" alt="Our Work 1">
-    <img src="ourwork2.jpg" alt="Our Work 2">
-    <img src="ourwork3.jpg" alt="Our Work 3">
-    <img src="ourwork4.jpg" alt="Our Work 4">
-    <img src="ourwork5.jpg" alt="Our Work 5">
-  </section>
-
-  <section id="coverage">
-    <h2>Service Coverage Areas</h2>
-    <ul>
-      <li>North New South Wales</li>
-      <li>Southeast Queensland</li>
-      <li>Toowoomba</li>
-      <li>Archerfield</li>
-      <li>Sunshine Coast</li>
-    </ul>
-  </section>
-
-  <section id="book" class="book-now">
-    <h2>Ready to Book?</h2>
-    <p>We offer short-notice appointments and flexible scheduling. Contact us now to get your aircraft looking its best!</p>
-    <a href="mailto:stratosphereads@yahoo.com">Book Now via Email</a>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/mlekrpyw" method="POST">
-      <label>Name:<br><input type="text" name="name" required></label><br><br>
-      <label>Email:<br><input type="email" name="email" required></label><br><br>
-      <label>Message:<br><textarea name="message" rows="5" required></textarea></label><br><br>
-      <button type="submit">Send Message</button>
-    </form>
-    <p><strong>Phone:</strong> 0479 101 490</p>
-    <p><strong>Email:</strong> <a href="mailto:stratosphereads@yahoo.com">stratosphereads@yahoo.com</a></p>
-    <p><strong>Location:</strong> Gold Coast, QLD, Australia</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Stratosphere Aviation Detailing. All rights reserved.</p>
-    <div class="contact-icons">
-      <a href="https://www.facebook.com/profile.php?id=61577069496524" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-      <a href="https://www.instagram.com/gary.alandisney/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-    </div>
-  </footer>
-</body>
-</html>
