@@ -229,3 +229,53 @@
     <a href="#contact">Contact</a>
     <a href="#book">Book Now</a>
   </nav>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Interior & exterior aircraft cleaning</li>
+      <li>Paintwork polishing and protection</li>
+      <li>Brightwork & plexiglass polishing</li>
+      <li>Cabin deodorising and deep cleaning</li>
+      <li>FBO and flying school contracts</li>
+      <li>Emergency / short-notice callouts</li>
+    </ul>
+  </section>
+
+  <section id="photos" class="photos">
+    <h2>Our Work</h2>
+    <img src="aircraft1.jpg" alt="Aircraft cleaned 1">
+    <img src="aircraft2.jpg" alt="Aircraft cleaned 2">
+    <img src="aircraft3.jpg" alt="Aircraft cleaned 3">
+    <img src="aircraft4.jpg" alt="Aircraft cleaned 4">
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products-image">
+      <img src="product1.jpg" alt="Detailing Product">
+    </div>
+  </section>
+
+  <section id="coverage">
+    <h2>Service Coverage</h2>
+    <p>We proudly service North New South Wales and Southeast Queensland including Toowoomba, Archerfield, and the Sunshine Coast.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> <a href="mailto:stratosphereads@yahoo.com">stratosphereads@yahoo.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+61479101490">0479 101 490</a></p>
+    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61577069496524" target="_blank">Stratosphere Aviation Detailing Services</a></p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/gary.alandisney/" target="_blank">@gary.alandisney</a></p>
+  </section>
+
+  <section id="book" class="book-now">
+    <h2>Book a Service</h2>
+    <p>Ready to give your aircraft the shine it deserves? Book now!</p>
+    <a href="mailto:stratosphereads@yahoo.com">Book via Email</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Stratosphere Aviation Detailing. All rights reserved.</p>
+  </footer>
