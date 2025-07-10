@@ -243,12 +243,13 @@
   </section>
 
   <section id="photos" class="photos">
-    <h2>Our Work</h2>
-    <img src="aircraft1.jpg" alt="Aircraft cleaned 1">
-    <img src="aircraft2.jpg" alt="Aircraft cleaned 2">
-    <img src="aircraft3.jpg" alt="Aircraft cleaned 3">
-    <img src="aircraft4.jpg" alt="Aircraft cleaned 4">
-  </section>
+  <h2>Our Work</h2>
+  <img src="ourwork1.jpg" alt="Our Work 1">
+  <img src="ourwork2.jpg" alt="Our Work 2">
+  <img src="ourwork3.jpg" alt="Our Work 3">
+  <img src="ourwork4.jpg" alt="Our Work 4">
+  <img src="ourwork5.jpg" alt="Our Work 5">
+</section>
 
   <section id="products">
     <h2>Our Products</h2>
