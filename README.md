@@ -1,231 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stratosphere Aviation Detailing</title>
-  <meta name="description" content="Premium aircraft detailing across Southeast Queensland and Northern NSW. Specialising in private, training, and FBO contracts." />
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style>
-    :root {
-      --primary-color: #000000;
-      --accent-color: #007bff;
-      --text-light: #ffffff;
-      --text-dark: #ffffff;
-      --bg-light: #000000;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--bg-light);
-      color: var(--text-light);
-    }
-
-    header {
-      background: var(--primary-color);
-      color: var(--text-light);
-      padding: 40px 20px 60px;
-      text-align: center;
-      position: relative;
-    }
-
-    .header-photo {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      display: block;
-    }
-
-    header img.logo {
-  max-height: 120px;
-  margin-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
+* {
+  box-sizing: border-box;
 }
 
-    header h1 {
-      margin: 10px 0 10px;
-      font-size: 3em;
-    }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-light);
+}
 
-    header p {
-      margin: 0;
-      font-size: 1.3em;
-    }
+header {
+  background: var(--primary-color);
+  color: var(--text-light);
+  padding: 40px 20px 60px;
+  text-align: center;
+  position: relative;
+}
 
-    nav {
-      background: var(--primary-color);
-      padding: 12px;
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
+.header-photo {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
 
-    nav a {
-      color: var(--text-light);
-      text-decoration: none;
-      font-weight: 600;
-      padding: 8px 12px;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
-      background: var(--accent-color);
-      color: var(--text-light);
-      border-radius: 5px;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 2em;
-      color: var(--accent-color);
-      margin-bottom: 20px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .photos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .photos img {
-      width: 100%;
-      max-width: 320px;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(255,255,255,0.1);
-      transition: transform 0.3s;
-    }
-
-    .photos img:hover {
-      transform: scale(1.03);
-    }
-
-    .services-image, .products-image {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .services-image img, .products-image img {
-      width: 100%;
-      max-width: 700px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    }
-
-    .book-now {
-      background: var(--primary-color);
-      color: var(--text-light);
-      text-align: center;
-      padding: 40px 20px;
-      border-radius: 10px;
-    }
-
-    .book-now a {
-      background: var(--accent-color);
-      color: var(--text-light);
-      text-decoration: none;
-      font-weight: bold;
-      padding: 12px 30px;
-      border-radius: 6px;
-      font-size: 1.1em;
-      display: inline-block;
-      margin-top: 20px;
-    }
-
-    .contact-icons {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      font-size: 1.2em;
-      margin-top: 20px;
-    }
-
-    .contact-icons a {
-      color: var(--accent-color);
-      text-decoration: none;
-    }
-
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
-      padding: 15px;
-      font-size: 1.5em;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      z-index: 1000;
-    }
-
-    .whatsapp-button:hover {
-      background-color: #1ebe5d;
-    }
-
-    footer {
-      background: var(--primary-color);
-      color: var(--text-light);
-      text-align: center;
-      padding: 25px 10px;
-      font-size: 0.9em;
-    }
-
-    footer a {
-      color: var(--accent-color);
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-      .photos {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-p9xUtgJwGq4T3tB6MTI1+iV5X1p3BoH4FfL1KUt5kPeQ3w05GVn3T6kCAXq/udfrvEcjP13TivCEuN+eL+Hedg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <a class="whatsapp-button" href="https://wa.me/61479101490" target="_blank" title="Chat with us on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <header>
-    <img src="header-photo.jpg" alt="Aircraft Detailing Banner" class="header-photo">
-    <img src="logo.png" alt="Stratosphere Logo" class="logo">
-    <h1>Stratosphere Aviation Detailing</h1>
-    <p>Premium aircraft detailing across SE QLD and Northern NSW</p>
-  </header>
-
-  <nav>
-    <a href="#">Home</a>
-    <a href="#services">Services</a>
-    <a href="#photos">Photos</a>
-    <a href="#products">Products</a>
-    <a href="#coverage">Coverage</a>
-    <a href="#contact">Contact</a>
-    <a href="#book">Book Now</a>
-  </nav>
+header img.logo {
