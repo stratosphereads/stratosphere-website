@@ -252,9 +252,11 @@
 
   <section id="photos" class="photos">
     <h2>Our Work</h2>
-    <img src="photo1.jpg" alt="Aircraft 1">
-    <img src="photo2.jpg" alt="Aircraft 2">
-    <img src="photo3.jpg" alt="Aircraft 3">
+    <img src="ourwork1.jpg" alt="Our Work 1">
+    <img src="ourwork2.jpg" alt="Our Work 2">
+    <img src="ourwork3.jpg" alt="Our Work 3">
+    <img src="ourwork4.jpg" alt="Our Work 4">
+    <img src="ourwork5.jpg" alt="Our Work 5">
   </section>
 
   <section id="coverage">
