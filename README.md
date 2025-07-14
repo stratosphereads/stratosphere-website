@@ -42,13 +42,13 @@
     }
 
     header img.logo {
-  max-height: 120px;
-  margin-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
-}
+      max-height: 120px;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
+    }
 
     header h1 {
       margin: 10px 0 10px;
@@ -243,13 +243,13 @@
   </section>
 
   <section id="photos" class="photos">
-  <h2>Our Work</h2>
-  <img src="ourwork1.jpg" alt="Our Work 1">
-  <img src="ourwork2.jpg" alt="Our Work 2">
-  <img src="ourwork3.jpg" alt="Our Work 3">
-  <img src="ourwork4.jpg" alt="Our Work 4">
-  <img src="ourwork5.jpg" alt="Our Work 5">
-</section>
+    <h2>Our Work</h2>
+    <img src="ourwork1.jpg" alt="Our Work 1">
+    <img src="ourwork2.jpg" alt="Our Work 2">
+    <img src="ourwork3.jpg" alt="Our Work 3">
+    <img src="ourwork4.jpg" alt="Our Work 4">
+    <img src="ourwork5.jpg" alt="Our Work 5">
+  </section>
 
   <section id="products">
     <h2>Our Products</h2>
@@ -278,5 +278,18 @@
   </section>
 
   <footer>
+    <p><strong>Stratosphere Aviation Detailing Services</strong></p>
+    <p>
+      <a href="mailto:stratosphereads@yahoo.com">stratosphereads@yahoo.com</a> |
+      <a href="https://stratosphereaviationdetailing.com.au" target="_blank">stratosphereaviationdetailing.com.au</a>
+    </p>
+    <p>ABN: 83623559197</p>
+    <p>Servicing Southeast Queensland & Northern New South Wales</p>
+    <p>
+      <a href="https://www.facebook.com/profile.php?id=61577069496524" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/gary.alandisney/" target="_blank">Instagram</a>
+    </p>
     <p>&copy; 2025 Stratosphere Aviation Detailing. All rights reserved.</p>
   </footer>
+</body>
+</html>
