@@ -41,11 +41,11 @@
       display: block;
     }
 
-    header img.logo-overlay {
+.logo-overlay {
   position: absolute;
-  bottom: -60px;   /* Half off the header */
-  left: 20px;      /* Adjust horizontal position */
-  height: 120px;   /* Resize logo as needed */
+  bottom: -60px;
+  left: 20px;
+  height: 120px;
   z-index: 10;
   filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.4));
 }
