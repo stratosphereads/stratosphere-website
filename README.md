@@ -208,16 +208,18 @@
   </details>
 
   <details id="photos">
-    <summary><h2>Our Work</h2></summary>
-    <br>
-    <div class="photos">
-      <img src="ourwork1.jpg" alt="Our Work 1">
-      <img src="ourwork2.jpg" alt="Our Work 2">
-      <img src="ourwork3.jpg" alt="Our Work 3">
-      <img src="ourwork4.jpg" alt="Our Work 4">
-      <img src="ourwork5.jpg" alt="Our Work 5">
-    </div>
-  </details>
+  <summary><h2>Our Work</h2></summary>
+  <br>
+  <div class="photos">
+    <img src="ourwork1.jpg" alt="Our Work 1">
+    <img src="ourwork2.jpg" alt="Our Work 2">
+    <img src="ourwork3.jpg" alt="Our Work 3">
+    <img src="ourwork4.jpg" alt="Our Work 4">
+    <img src="ourwork5.jpg" alt="Our Work 5">
+    <img src="ourwork6.jpg" alt="Our Work 6">
+    <img src="ourwork7.jpg" alt="Our Work 7">
+  </div>
+</details>
 
   <details id="products">
     <summary><h2>Our Products</h2></summary>
