@@ -259,9 +259,12 @@
   </section>
 
   <section id="coverage">
-    <h2>Service Coverage</h2>
-    <p>We proudly service North New South Wales and Southeast Queensland including Toowoomba, Archerfield, and the Sunshine Coast.</p>
-  </section>
+  <h2>Service Coverage</h2>
+  <p>We proudly service North New South Wales and Southeast Queensland including Toowoomba, Archerfield, and the Sunshine Coast.</p>
+  <div class="services-image">
+    <img src="coverage-map.jpg" alt="Service Coverage Map">
+  </div>
+</section>
 
   <section id="contact">
     <h2>Contact Us</h2>
