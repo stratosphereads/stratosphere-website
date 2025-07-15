@@ -35,23 +35,13 @@
 
     .header-photo {
       width: 100%;
-      max-height: 300px;
+      max-height: 350px;
       object-fit: cover;
       display: block;
     }
 
-    .logo-overlay {
-      position: absolute;
-      bottom: -60px;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 120px;
-      z-index: 10;
-      filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.4));
-    }
-
     header h1 {
-      margin: 70px 0 10px;
+      margin: 40px 0 10px;
       font-size: 3em;
     }
 
@@ -71,10 +61,10 @@
 
     summary {
       cursor: pointer;
-      font-size: 1.6em;
+      font-size: 1.45em; /* slightly smaller to keep Service Coverage on one line */
       font-weight: bold;
       color: var(--accent-color);
-      text-shadow: 0 0 3px #fff, 0 0 6px #ccc;
+      margin-bottom: 10px;
     }
 
     summary h2 {
@@ -184,7 +174,6 @@
 
   <header>
     <img src="new-header.jpg" alt="Stratosphere Jet Polished in Hangar" class="header-photo">
-    <img src="logo.png" alt="Stratosphere Logo" class="logo-overlay">
     <h1>Stratosphere Aviation Detailing</h1>
     <p>Premium aircraft detailing across SE QLD and Northern NSW</p>
   </header>
