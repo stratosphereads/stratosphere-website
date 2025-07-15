@@ -231,16 +231,20 @@
   </nav>
 
   <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Interior & exterior aircraft cleaning</li>
-      <li>Paintwork polishing and protection</li>
-      <li>Brightwork & plexiglass polishing</li>
-      <li>Cabin deodorising and deep cleaning</li>
-      <li>FBO and flying school contracts</li>
-      <li>Emergency / short-notice callouts</li>
-    </ul>
-  </section>
+  <h2>Our Services</h2>
+  <ul>
+    <li>Interior & exterior aircraft cleaning</li>
+    <li>Paintwork polishing and protection</li>
+    <li>Brightwork & plexiglass polishing</li>
+    <li>Cabin deodorising and deep cleaning</li>
+    <li>FBO and flying school contracts</li>
+    <li>Emergency / short-notice callouts</li>
+  </ul>
+
+  <div class="services-image">
+    <img src="services-photo.jpg" alt="Aircraft Detailing Services">
+  </div>
+</section>
 
   <section id="photos" class="photos">
     <h2>Our Work</h2>
