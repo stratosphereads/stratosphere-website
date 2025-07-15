@@ -230,8 +230,8 @@
     <a href="#book">Book Now</a>
   </nav>
 
-  <section id="services">
-  <h2>Our Services</h2>
+ <details id="services">
+  <summary><h2>Our Services</h2></summary>
   <ul>
     <li>Interior & exterior aircraft cleaning</li>
     <li>Paintwork polishing and protection</li>
@@ -240,6 +240,10 @@
     <li>FBO and flying school contracts</li>
     <li>Emergency / short-notice callouts</li>
   </ul>
+  <div class="services-image">
+    <img src="services-photo.jpg" alt="Aircraft Detailing Services">
+  </div>
+</details>
 
   <div class="services-image">
     <img src="services-photo.jpg" alt="Aircraft Detailing Services">
