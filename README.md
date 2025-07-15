@@ -183,7 +183,7 @@
   </a>
 
   <header>
-    <img src="header-photo.jpg" alt="Aircraft Detailing Banner" class="header-photo">
+    <img src="new-header.jpg" alt="Stratosphere Jet Polished in Hangar" class="header-photo">
     <img src="logo.png" alt="Stratosphere Logo" class="logo-overlay">
     <h1>Stratosphere Aviation Detailing</h1>
     <p>Premium aircraft detailing across SE QLD and Northern NSW</p>
