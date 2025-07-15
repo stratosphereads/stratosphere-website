@@ -9,7 +9,7 @@
   <style>
     :root {
       --primary-color: #000000;
-      --accent-color: #e5e4e2; /* Platinum */
+      --accent-color: #007bff;
       --text-light: #ffffff;
       --bg-light: #000000;
     }
@@ -40,8 +40,18 @@
       display: block;
     }
 
+    .logo-overlay {
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 120px;
+      z-index: 10;
+      filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.4));
+    }
+
     header h1 {
-      margin: 10px 0 10px;
+      margin: 70px 0 10px;
       font-size: 3em;
     }
 
@@ -64,7 +74,6 @@
       font-size: 1.6em;
       font-weight: bold;
       color: var(--accent-color);
-      text-shadow: 0 0 3px #fff, 0 0 6px #ccc;
       margin-bottom: 10px;
     }
 
@@ -175,95 +184,7 @@
 
   <header>
     <img src="header-photo.jpg" alt="Aircraft Detailing Banner" class="header-photo">
+    <img src="logo.png" alt="Stratosphere Logo" class="logo-overlay">
     <h1>Stratosphere Aviation Detailing</h1>
     <p>Premium aircraft detailing across SE QLD and Northern NSW</p>
   </header>
-
-  <details id="home" open>
-    <summary><h2>Welcome</h2></summary>
-    <br>
-    <div style="text-align:center">
-      <p><strong>Welcome to Stratosphere Aviation Detailing</strong><br>
-      Where Perfection Takes Flight.</p>
-      <p>
-        We offer premium aircraft detailing across Southeast Queensland and Northern NSW.<br>
-        Use the menu to explore our services, photos, coverage areas, and booking options.
-      </p>
-    </div>
-  </details>
-
-  <details id="services">
-    <summary><h2>Our Services</h2></summary>
-    <br>
-    <ul>
-      <li>Interior & exterior aircraft cleaning</li>
-      <li>Paintwork polishing and protection</li>
-      <li>Brightwork & plexiglass polishing</li>
-      <li>Cabin deodorising and deep cleaning</li>
-      <li>FBO and flying school contracts</li>
-      <li>Emergency / short-notice callouts</li>
-    </ul>
-    <div class="services-image">
-      <img src="services-photo.jpg" alt="Aircraft Detailing Services">
-    </div>
-  </details>
-
-  <details id="photos">
-    <summary><h2>Our Work</h2></summary>
-    <br>
-    <div class="photos">
-      <img src="ourwork1.jpg" alt="Our Work 1">
-      <img src="ourwork2.jpg" alt="Our Work 2">
-      <img src="ourwork3.jpg" alt="Our Work 3">
-      <img src="ourwork4.jpg" alt="Our Work 4">
-      <img src="ourwork5.jpg" alt="Our Work 5">
-    </div>
-  </details>
-
-  <details id="products">
-    <summary><h2>Our Products</h2></summary>
-    <div class="products-image">
-      <img src="product1.jpg" alt="Detailing Product">
-    </div>
-  </details>
-
-  <details id="coverage">
-    <summary><h2>Service Coverage</h2></summary>
-    <br>
-    <p>We proudly service North New South Wales and Southeast Queensland including Toowoomba, Archerfield, and the Sunshine Coast.</p>
-    <div class="services-image">
-      <img src="coverage-map.jpg" alt="Service Coverage Map">
-    </div>
-  </details>
-
-  <details id="contact">
-    <summary><h2>Contact Us</h2></summary>
-    <br>
-    <p><strong>Email:</strong> <a href="mailto:stratosphereads@yahoo.com">stratosphereads@yahoo.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:+61479101490">0479 101 490</a></p>
-    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61577069496524" target="_blank">Stratosphere Aviation Detailing Services</a></p>
-    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/gary.alandisney/" target="_blank">@gary.alandisney</a></p>
-  </details>
-
-  <details id="book" class="book-now">
-    <summary><h2>Book a Service</h2></summary>
-    <br>
-    <p>Ready to give your aircraft the shine it deserves? Book now!</p>
-    <a href="mailto:stratosphereads@yahoo.com">Book via Email</a>
-  </details>
-
-  <footer>
-    <p><strong>Stratosphere Aviation Detailing Services</strong></p>
-    <p>
-      <a href="mailto:stratosphereads@yahoo.com">stratosphereads@yahoo.com</a> |
-      <a href="https://stratosphereaviationdetailing.com.au" target="_blank">stratosphereaviationdetailing.com.au</a>
-    </p>
-    <p>ABN: 83623559197</p>
-    <p>Servicing Southeast Queensland & Northern New South Wales</p>
-    <p>
-      <a href="https://www.facebook.com/profile.php?id=61577069496524" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com/gary.alandisney/" target="_blank">Instagram</a>
-    </p>
-  </footer>
-</body>
-</html>
