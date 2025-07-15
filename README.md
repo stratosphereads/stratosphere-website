@@ -40,9 +40,19 @@
       display: block;
     }
 
+    .logo-overlay {
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 120px;
+      z-index: 10;
+      filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.4));
+    }
+
     header h1 {
-      margin: 30px 0 10px;
-      font-size: 2.8em;
+      margin: 70px 0 10px;
+      font-size: 3em;
     }
 
     header p {
@@ -61,16 +71,15 @@
 
     summary {
       cursor: pointer;
-      font-size: 1.4em;
+      font-size: 1.6em;
       font-weight: bold;
       color: var(--accent-color);
-      margin-bottom: 5px;
+      text-shadow: 0 0 3px #fff, 0 0 6px #ccc;
     }
 
     summary h2 {
       display: inline;
       margin: 0;
-      font-size: 1.4em;
     }
 
     details[open] summary::after {
@@ -175,6 +184,7 @@
 
   <header>
     <img src="header-photo.jpg" alt="Aircraft Detailing Banner" class="header-photo">
+    <img src="logo.png" alt="Stratosphere Logo" class="logo-overlay">
     <h1>Stratosphere Aviation Detailing</h1>
     <p>Premium aircraft detailing across SE QLD and Northern NSW</p>
   </header>
