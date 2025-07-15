@@ -9,9 +9,8 @@
   <style>
     :root {
       --primary-color: #000000;
-      --accent-color: #007bff;
+      --accent-color: #e5e4e2; /* Platinum */
       --text-light: #ffffff;
-      --text-dark: #ffffff;
       --bg-light: #000000;
     }
 
@@ -52,18 +51,21 @@
     }
 
     details {
-      margin-bottom: 30px;
+      margin: 30px auto;
       background: #111;
       padding: 15px;
       border-radius: 10px;
       border: 1px solid #333;
+      max-width: 1000px;
     }
 
     summary {
       cursor: pointer;
-      font-size: 1.5em;
+      font-size: 1.6em;
+      font-weight: bold;
       color: var(--accent-color);
-      text-align: left;
+      text-shadow: 0 0 3px #fff, 0 0 6px #ccc;
+      margin-bottom: 10px;
     }
 
     summary h2 {
@@ -71,14 +73,14 @@
       margin: 0;
     }
 
-    details[open] {
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
     details[open] summary::after {
       content: "";
       display: block;
       margin-top: 10px;
+    }
+
+    #home {
+      text-align: center;
     }
 
     .photos {
@@ -123,6 +125,7 @@
       font-size: 1.1em;
       display: inline-block;
       margin-top: 20px;
+      box-shadow: 0 0 8px rgba(255,255,255,0.4);
     }
 
     .whatsapp-button {
@@ -179,14 +182,14 @@
   <details id="home" open>
     <summary><h2>Welcome</h2></summary>
     <br>
-    <p style="text-align:center;">
-      Welcome to <strong>Stratosphere Aviation Detailing</strong><br>
-      Where Perfection Takes Flight.
-    </p>
-    <p>
-      We offer premium aircraft detailing across Southeast Queensland and Northern NSW.<br>
-      Use the menu to explore our services, photos, coverage areas, and booking options.
-    </p>
+    <div style="text-align:center">
+      <p><strong>Welcome to Stratosphere Aviation Detailing</strong><br>
+      Where Perfection Takes Flight.</p>
+      <p>
+        We offer premium aircraft detailing across Southeast Queensland and Northern NSW.<br>
+        Use the menu to explore our services, photos, coverage areas, and booking options.
+      </p>
+    </div>
   </details>
 
   <details id="services">
