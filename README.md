@@ -51,30 +51,6 @@
       font-size: 1.3em;
     }
 
-    nav {
-      background: var(--primary-color);
-      padding: 12px;
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    nav a {
-      color: var(--text-light);
-      text-decoration: none;
-      font-weight: 600;
-      padding: 8px 12px;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
-      background: var(--accent-color);
-      color: var(--text-light);
-      border-radius: 5px;
-    }
-
     details {
       margin-bottom: 30px;
       background: #111;
@@ -87,6 +63,7 @@
       cursor: pointer;
       font-size: 1.5em;
       color: var(--accent-color);
+      text-align: left;
     }
 
     summary h2 {
@@ -180,9 +157,6 @@
     }
 
     @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
       .photos {
         flex-direction: column;
         align-items: center;
@@ -205,22 +179,15 @@
   <details id="home" open>
     <summary><h2>Welcome</h2></summary>
     <br>
+    <p style="text-align:center;">
+      Welcome to <strong>Stratosphere Aviation Detailing</strong><br>
+      Where Perfection Takes Flight.
+    </p>
     <p>
-      Welcome to <strong>Stratosphere Aviation Detailing</strong> — Where Perfection Takes Flight.<br>
       We offer premium aircraft detailing across Southeast Queensland and Northern NSW.<br>
-      Use the menu above to explore our services, photos, coverage areas, and booking options.
+      Use the menu to explore our services, photos, coverage areas, and booking options.
     </p>
   </details>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#photos">Photos</a>
-    <a href="#products">Products</a>
-    <a href="#coverage">Coverage</a>
-    <a href="#contact">Contact</a>
-    <a href="#book">Book Now</a>
-  </nav>
 
   <details id="services">
     <summary><h2>Our Services</h2></summary>
@@ -238,13 +205,16 @@
     </div>
   </details>
 
-  <details id="photos" class="photos">
+  <details id="photos">
     <summary><h2>Our Work</h2></summary>
-    <img src="ourwork1.jpg" alt="Our Work 1">
-    <img src="ourwork2.jpg" alt="Our Work 2">
-    <img src="ourwork3.jpg" alt="Our Work 3">
-    <img src="ourwork4.jpg" alt="Our Work 4">
-    <img src="ourwork5.jpg" alt="Our Work 5">
+    <br>
+    <div class="photos">
+      <img src="ourwork1.jpg" alt="Our Work 1">
+      <img src="ourwork2.jpg" alt="Our Work 2">
+      <img src="ourwork3.jpg" alt="Our Work 3">
+      <img src="ourwork4.jpg" alt="Our Work 4">
+      <img src="ourwork5.jpg" alt="Our Work 5">
+    </div>
   </details>
 
   <details id="products">
