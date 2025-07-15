@@ -41,15 +41,6 @@
       display: block;
     }
 
-    .logo-overlay {
-      position: absolute;
-      bottom: -60px;
-      left: 20px;
-      height: 120px;
-      z-index: 10;
-      filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.4));
-    }
-
     header h1 {
       margin: 10px 0 10px;
       font-size: 3em;
@@ -105,6 +96,12 @@
 
     details[open] {
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    details[open] summary::after {
+      content: "";
+      display: block;
+      margin-top: 10px;
     }
 
     .photos {
@@ -201,13 +198,13 @@
 
   <header>
     <img src="header-photo.jpg" alt="Aircraft Detailing Banner" class="header-photo">
-    <img src="logo.png" alt="Stratosphere Logo" class="logo-overlay">
     <h1>Stratosphere Aviation Detailing</h1>
     <p>Premium aircraft detailing across SE QLD and Northern NSW</p>
   </header>
 
-  <details id="home">
+  <details id="home" open>
     <summary><h2>Welcome</h2></summary>
+    <br>
     <p>
       Welcome to <strong>Stratosphere Aviation Detailing</strong> — Where Perfection Takes Flight.<br>
       We offer premium aircraft detailing across Southeast Queensland and Northern NSW.<br>
@@ -227,6 +224,7 @@
 
   <details id="services">
     <summary><h2>Our Services</h2></summary>
+    <br>
     <ul>
       <li>Interior & exterior aircraft cleaning</li>
       <li>Paintwork polishing and protection</li>
@@ -258,6 +256,7 @@
 
   <details id="coverage">
     <summary><h2>Service Coverage</h2></summary>
+    <br>
     <p>We proudly service North New South Wales and Southeast Queensland including Toowoomba, Archerfield, and the Sunshine Coast.</p>
     <div class="services-image">
       <img src="coverage-map.jpg" alt="Service Coverage Map">
@@ -266,6 +265,7 @@
 
   <details id="contact">
     <summary><h2>Contact Us</h2></summary>
+    <br>
     <p><strong>Email:</strong> <a href="mailto:stratosphereads@yahoo.com">stratosphereads@yahoo.com</a></p>
     <p><strong>Phone:</strong> <a href="tel:+61479101490">0479 101 490</a></p>
     <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61577069496524" target="_blank">Stratosphere Aviation Detailing Services</a></p>
@@ -274,6 +274,7 @@
 
   <details id="book" class="book-now">
     <summary><h2>Book a Service</h2></summary>
+    <br>
     <p>Ready to give your aircraft the shine it deserves? Book now!</p>
     <a href="mailto:stratosphereads@yahoo.com">Book via Email</a>
   </details>
