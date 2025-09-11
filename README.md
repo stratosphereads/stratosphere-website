@@ -61,7 +61,7 @@
 
     summary {
       cursor: pointer;
-      font-size: 1.45em; /* slightly smaller to keep Service Coverage on one line */
+      font-size: 1.45em;
       font-weight: bold;
       color: var(--accent-color);
       margin-bottom: 10px;
@@ -100,6 +100,20 @@
 
     .photos img:hover {
       transform: scale(1.03);
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 40px;
+    }
+
+    .video-container video {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      border: 2px solid #ccc;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     }
 
     .services-image, .products-image {
@@ -173,7 +187,7 @@
   </a>
 
   <header>
-    <img src="new-header.jpg" alt="Stratosphere Jet Polished in Hangar" class="header-photo">
+    <img src="new-header.jpg" alt="Stratosphere Jet Polished in Hangar" class="header-photo" loading="lazy">
     <h1>Stratosphere Aviation Detailing</h1>
     <p>Premium aircraft detailing across SE QLD and Northern NSW</p>
   </header>
@@ -203,28 +217,48 @@
       <li>Emergency / short-notice callouts</li>
     </ul>
     <div class="services-image">
-      <img src="services-photo.jpg" alt="Aircraft Detailing Services">
+      <img src="services-photo.jpg" alt="Aircraft Detailing Services" loading="lazy">
     </div>
   </details>
 
   <details id="photos">
-  <summary><h2>Our Work</h2></summary>
-  <br>
-  <div class="photos">
-    <img src="ourwork1.jpg" alt="Our Work 1">
-    <img src="ourwork2.jpg" alt="Our Work 2">
-    <img src="ourwork3.jpg" alt="Our Work 3">
-    <img src="ourwork4.jpg" alt="Our Work 4">
-    <img src="ourwork5.jpg" alt="Our Work 5">
-    <img src="ourwork6.jpg" alt="Our Work 6">
-    <img src="ourwork7.jpg" alt="Our Work 7">
-  </div>
-</details>
+    <summary><h2>Our Work</h2></summary>
+    <br>
+    <!-- Video Section -->
+    <div class="video-container">
+      <video controls preload="none" poster="video-poster.jpg">
+        <source src="ourwork-video.mp4" type="video/mp4">
+        <source src="ourwork-video.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="photos">
+      <img src="ourwork1.jpg" alt="Our Work 1" loading="lazy">
+      <img src="ourwork2.jpg" alt="Our Work 2" loading="lazy">
+      <img src="ourwork3.jpg" alt="Our Work 3" loading="lazy">
+      <img src="ourwork4.jpg" alt="Our Work 4" loading="lazy">
+      <img src="ourwork5.jpg" alt="Our Work 5" loading="lazy">
+      <img src="ourwork6.jpg" alt="Our Work 6" loading="lazy">
+      <img src="ourwork7.jpg" alt="Our Work 7" loading="lazy">
+      <img src="ourwork8.jpg" alt="Our Work 8" loading="lazy">
+      <img src="ourwork9.jpg" alt="Our Work 9" loading="lazy">
+      <img src="ourwork10.jpg" alt="Our Work 10" loading="lazy">
+      <img src="ourwork11.jpg" alt="Our Work 11" loading="lazy">
+      <img src="ourwork12.jpg" alt="Our Work 12" loading="lazy">
+      <img src="ourwork13.jpg" alt="Our Work 13" loading="lazy">
+      <img src="ourwork14.jpg" alt="Our Work 14" loading="lazy">
+      <img src="ourwork15.jpg" alt="Our Work 15" loading="lazy">
+      <img src="ourwork16.jpg" alt="Our Work 16" loading="lazy">
+      <img src="ourwork17.jpg" alt="Our Work 17" loading="lazy">
+    </div>
+  </details>
 
   <details id="products">
     <summary><h2>Our Products</h2></summary>
     <div class="products-image">
-      <img src="product1.jpg" alt="Detailing Product">
+      <img src="product1.jpg" alt="Detailing Product" loading="lazy">
     </div>
   </details>
 
@@ -233,7 +267,7 @@
     <br>
     <p>We proudly service North New South Wales and Southeast Queensland including Toowoomba, Archerfield, and the Sunshine Coast.</p>
     <div class="services-image">
-      <img src="coverage-map.jpg" alt="Service Coverage Map">
+      <img src="coverage-map.jpg" alt="Service Coverage Map" loading="lazy">
     </div>
   </details>
 
