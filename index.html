@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stratosphere Aviation Detailing</title>
 
-  <meta name="description" content="Premium aircraft detailing across Southeast Queensland and Northern NSW. Aviation-focused with selective marine services available by enquiry." />
+  <meta name="description" content="Premium aircraft detailing across Southeast Queensland and Northern NSW. Aviation-first services with selective aviation-grade marine detailing available by enquiry.">
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
@@ -15,6 +16,7 @@
       --primary: #000;
       --accent: #007bff;
       --text: #fff;
+      --panel: #111;
     }
 
     * { box-sizing: border-box; }
@@ -22,9 +24,8 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #000;
-      color: #fff;
-      line-height: 1.6;
+      background: var(--primary);
+      color: var(--text);
     }
 
     header {
@@ -34,78 +35,78 @@
 
     .header-photo {
       width: 100%;
-      max-height: 360px;
+      max-height: 350px;
       object-fit: cover;
-      border-radius: 6px;
+      display: block;
     }
 
     header h1 {
-      margin: 30px 0 10px;
+      margin: 40px 0 10px;
       font-size: 3em;
     }
 
     header p {
       font-size: 1.3em;
-      opacity: 0.85;
+      margin: 0;
     }
 
-    section {
+    details {
       max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
+      margin: 30px auto;
+      background: var(--panel);
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 15px;
     }
 
-    h2 {
+    summary {
+      cursor: pointer;
+      font-size: 1.45em;
+      font-weight: bold;
       color: var(--accent);
-      margin-bottom: 15px;
-      font-size: 2em;
     }
 
-    ul {
-      padding-left: 20px;
+    summary h2 {
+      display: inline;
+      margin: 0;
     }
 
-    li {
-      margin-bottom: 8px;
-    }
+    ul { line-height: 1.8; }
 
     .photos {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-      margin-top: 30px;
     }
 
     .photos img {
-      max-width: 300px;
       width: 100%;
+      max-width: 320px;
       border-radius: 10px;
-      border: 2px solid #333;
+      border: 2px solid #ccc;
     }
 
     .video-container {
       display: flex;
       justify-content: center;
-      margin-top: 30px;
+      margin: 25px 0;
     }
 
-    video {
-      max-width: 700px;
+    .video-container video {
       width: 100%;
+      max-width: 700px;
       border-radius: 12px;
-      border: 2px solid #333;
+      border: 2px solid #ccc;
     }
 
-    .cta a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 30px;
-      background: var(--accent);
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
+    .services-image img,
+    .products-image img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+      display: block;
+      margin: 30px auto 0;
     }
 
     .whatsapp {
@@ -117,21 +118,33 @@
       padding: 15px;
       border-radius: 50%;
       font-size: 1.5em;
-      z-index: 1000;
+      z-index: 999;
+    }
+
+    .book-now a {
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
     }
 
     footer {
       text-align: center;
-      padding: 30px 15px;
-      background: #000;
+      padding: 30px 10px;
       font-size: 0.9em;
-      opacity: 0.85;
     }
 
     footer a {
       color: var(--accent);
       text-decoration: none;
       margin: 0 8px;
+    }
+
+    @media (max-width: 600px) {
+      .photos { flex-direction: column; }
     }
   </style>
 </head>
@@ -145,49 +158,66 @@
 <header>
   <img src="new-header.jpg" alt="Stratosphere Aircraft Detailing" class="header-photo">
   <h1>Stratosphere Aviation Detailing</h1>
-  <p>Where Perfection Takes Flight</p>
+  <p>Premium aircraft detailing across SE QLD & Northern NSW</p>
 </header>
 
-<section>
+<details open>
+  <summary><h2>Welcome</h2></summary>
+  <p><strong>Where Perfection Takes Flight.</strong></p>
   <p>
-    Premium aviation detailing across Southeast Queensland and Northern New South Wales.
-    Trusted by private owners, operators, and aviation professionals.
+    Aviation-grade surface care for aircraft<br>
+    <small style="opacity:.75">Selective high-value marine vessels by enquiry</small>
   </p>
-</section>
+</details>
 
-<section>
-  <h2>Aviation Services</h2>
+<details>
+  <summary><h2>Our Services</h2></summary>
   <ul>
-    <li>Interior & exterior aircraft detailing</li>
-    <li>Paint correction & surface protection</li>
+    <li>Interior & exterior aircraft cleaning</li>
+    <li>Paintwork polishing and protection</li>
     <li>Brightwork & plexiglass polishing</li>
     <li>Cabin deep cleaning & deodorising</li>
     <li>FBO & flying school contracts</li>
     <li>Emergency / short-notice callouts</li>
   </ul>
-</section>
+  <div class="services-image">
+    <img src="services-photo.jpg" alt="Aircraft detailing services">
+  </div>
+</details>
 
-<section>
-  <h2>Marine Services (Selective)</h2>
+<details>
+  <summary><h2>Marine Detailing (Aviation-Grade)</h2></summary>
   <p>
-    While aviation remains our core focus, Stratosphere offers
-    <strong>select marine services</strong> for high-value vessels,
-    applying the same aviation-grade products, discipline, and standards.
+    Aviation remains our core focus. Select marine vessels are serviced
+    using the same aviation-grade products, standards, and processes.
   </p>
   <ul>
     <li>Private, high-end vessels only</li>
-    <li>Exterior wash & decontamination</li>
-    <li>Gelcoat & paint protection</li>
-    <li>UV protection for harsh coastal environments</li>
+    <li>Exterior wash & surface decontamination</li>
+    <li>Paint & gelcoat protection</li>
+    <li>UV protection for coastal conditions</li>
     <li>By enquiry only</li>
   </ul>
-</section>
+</details>
 
-<section>
-  <h2>Our Work</h2>
+<details>
+  <summary><h2>Our Work</h2></summary>
+
   <div class="video-container">
     <video controls poster="video-poster.jpg">
       <source src="ourwork-video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="video-container">
+    <video controls poster="video2-poster.jpg">
+      <source src="ourwork-video2.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="video-container">
+    <video controls poster="video3-poster.jpg">
+      <source src="ourwork-video3.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -196,18 +226,38 @@
     <img src="ourwork2.jpg">
     <img src="ourwork3.jpg">
     <img src="ourwork4.jpg">
+    <img src="ourwork5.jpg">
+    <img src="ourwork6.jpg">
+    <img src="ourwork7.jpg">
+    <img src="ourwork8.jpg">
+    <img src="ourwork9.jpg">
+    <img src="ourwork10.jpg">
+    <img src="ourwork11.jpg">
+    <img src="ourwork12.jpg">
+    <img src="ourwork13.jpg">
+    <img src="ourwork14.jpg">
+    <img src="ourwork15.jpg">
+    <img src="ourwork16.jpg">
+    <img src="ourwork17.jpg">
+    <img src="ourwork18.jpg">
+    <img src="ourwork19.jpg">
+    <img src="ourwork20.jpg">
+    <img src="ourwork21.jpg">
+    <img src="ourwork22.jpg">
+    <img src="ourwork23.jpg">
   </div>
-</section>
+</details>
 
-<section>
-  <h2>Contact</h2>
+<details>
+  <summary><h2>Contact</h2></summary>
   <p>Email: <a href="mailto:stratosphereads@yahoo.com">stratosphereads@yahoo.com</a></p>
   <p>Phone: <a href="tel:+61479101490">0479 101 490</a></p>
+</details>
 
-  <div class="cta">
-    <a href="mailto:stratosphereads@yahoo.com">Book a Service</a>
-  </div>
-</section>
+<details class="book-now">
+  <summary><h2>Book a Service</h2></summary>
+  <a href="mailto:stratosphereads@yahoo.com">Book via Email</a>
+</details>
 
 <footer>
   <p><strong>Stratosphere Aviation Detailing Services</strong></p>
