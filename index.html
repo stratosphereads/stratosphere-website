@@ -5,18 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stratosphere Aviation Detailing</title>
 
-  <meta name="description" content="Premium aircraft detailing across Southeast Queensland and Northern NSW. Specialising in private, training, and FBO contracts, with selective aviation-grade marine detailing available." />
+  <meta name="description" content="Premium aircraft detailing across Southeast Queensland and Northern NSW. Aviation-focused with selective marine services available by enquiry." />
 
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     :root {
-      --primary-color: #000000;
-      --accent-color: #007bff;
-      --text-light: #ffffff;
-      --bg-light: #000000;
+      --primary: #000;
+      --accent: #007bff;
+      --text: #fff;
     }
 
     * { box-sizing: border-box; }
@@ -24,200 +22,169 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--bg-light);
-      color: var(--text-light);
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
     }
 
     header {
-      background: var(--primary-color);
-      padding: 40px 20px 60px;
       text-align: center;
+      padding: 40px 20px 60px;
     }
 
     .header-photo {
       width: 100%;
-      max-height: 350px;
+      max-height: 360px;
       object-fit: cover;
-      display: block;
+      border-radius: 6px;
     }
 
     header h1 {
-      margin: 40px 0 10px;
+      margin: 30px 0 10px;
       font-size: 3em;
     }
 
     header p {
-      margin: 0;
       font-size: 1.3em;
+      opacity: 0.85;
     }
 
-    details {
-      margin: 30px auto;
-      background: #111;
-      padding: 15px;
-      border-radius: 10px;
-      border: 1px solid #333;
+    section {
       max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
 
-    summary {
-      cursor: pointer;
-      font-size: 1.45em;
-      font-weight: bold;
-      color: var(--accent-color);
+    h2 {
+      color: var(--accent);
+      margin-bottom: 15px;
+      font-size: 2em;
     }
 
-    summary h2 {
-      display: inline;
-      margin: 0;
+    ul {
+      padding-left: 20px;
     }
 
-    #home { text-align: center; }
-
-    ul { line-height: 1.8; }
+    li {
+      margin-bottom: 8px;
+    }
 
     .photos {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
     }
 
     .photos img {
+      max-width: 300px;
       width: 100%;
-      max-width: 320px;
       border-radius: 10px;
-      border: 2px solid #ccc;
-      transition: transform 0.3s;
+      border: 2px solid #333;
     }
-
-    .photos img:hover { transform: scale(1.03); }
 
     .video-container {
       display: flex;
       justify-content: center;
-      margin: 20px 0 40px;
-    }
-
-    .video-container video {
-      width: 100%;
-      max-width: 700px;
-      border-radius: 12px;
-      border: 2px solid #ccc;
-    }
-
-    .services-image, .products-image {
-      text-align: center;
       margin-top: 30px;
     }
 
-    .services-image img,
-    .products-image img {
-      width: 100%;
+    video {
       max-width: 700px;
-      border-radius: 10px;
+      width: 100%;
+      border-radius: 12px;
+      border: 2px solid #333;
     }
 
-    .book-now a {
-      background: var(--accent-color);
+    .cta a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: var(--accent);
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      padding: 12px 30px;
       border-radius: 6px;
-      display: inline-block;
-      margin-top: 20px;
     }
 
-    .whatsapp-button {
+    .whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
+      background: #25d366;
+      color: #fff;
       padding: 15px;
+      border-radius: 50%;
       font-size: 1.5em;
       z-index: 1000;
     }
 
     footer {
-      background: #000;
       text-align: center;
-      padding: 25px 10px;
+      padding: 30px 15px;
+      background: #000;
       font-size: 0.9em;
+      opacity: 0.85;
     }
 
     footer a {
-      color: var(--accent-color);
+      color: var(--accent);
       text-decoration: none;
-      margin: 0 10px;
-    }
-
-    @media (max-width: 600px) {
-      .photos { flex-direction: column; }
+      margin: 0 8px;
     }
   </style>
 </head>
 
 <body>
 
-<a class="whatsapp-button" href="https://wa.me/61479101490" target="_blank">
+<a class="whatsapp" href="https://wa.me/61479101490" target="_blank">
   <i class="fab fa-whatsapp"></i>
 </a>
 
 <header>
-  <img src="new-header.jpg" alt="Stratosphere Jet Polished in Hangar" class="header-photo">
+  <img src="new-header.jpg" alt="Stratosphere Aircraft Detailing" class="header-photo">
   <h1>Stratosphere Aviation Detailing</h1>
-  <p>Premium aircraft detailing across SE QLD & Northern NSW</p>
+  <p>Where Perfection Takes Flight</p>
 </header>
 
-<details id="home" open>
-  <summary><h2>Welcome</h2></summary>
-  <p><strong>Where Perfection Takes Flight.</strong></p>
+<section>
   <p>
-    Aviation-grade surface care for aircraft<br>
-    <small style="opacity:0.75">
-      Select high-value marine vessels by enquiry
-    </small>
+    Premium aviation detailing across Southeast Queensland and Northern New South Wales.
+    Trusted by private owners, operators, and aviation professionals.
   </p>
-</details>
+</section>
 
-<details id="services">
-  <summary><h2>Our Services</h2></summary>
+<section>
+  <h2>Aviation Services</h2>
   <ul>
-    <li>Interior & exterior aircraft cleaning</li>
-    <li>Paintwork polishing and protection</li>
+    <li>Interior & exterior aircraft detailing</li>
+    <li>Paint correction & surface protection</li>
     <li>Brightwork & plexiglass polishing</li>
     <li>Cabin deep cleaning & deodorising</li>
     <li>FBO & flying school contracts</li>
     <li>Emergency / short-notice callouts</li>
-    <li>Selective marine detailing using aviation-grade products</li>
   </ul>
-  <div class="services-image">
-    <img src="services-photo.jpg" alt="Aircraft Detailing Services">
-  </div>
-</details>
+</section>
 
-<details id="marine">
-  <summary><h2>Marine Detailing – Aviation-Grade</h2></summary>
+<section>
+  <h2>Marine Services (Selective)</h2>
   <p>
-    While aviation remains our core focus, Stratosphere provides
-    <strong>selective marine detailing</strong> using the same
-    aviation-grade products, processes, and standards.
+    While aviation remains our core focus, Stratosphere offers
+    <strong>select marine services</strong> for high-value vessels,
+    applying the same aviation-grade products, discipline, and standards.
   </p>
   <ul>
     <li>Private, high-end vessels only</li>
-    <li>Exterior wash & surface decontamination</li>
-    <li>Paint & gelcoat protection</li>
-    <li>UV protection for harsh coastal conditions</li>
+    <li>Exterior wash & decontamination</li>
+    <li>Gelcoat & paint protection</li>
+    <li>UV protection for harsh coastal environments</li>
     <li>By enquiry only</li>
   </ul>
-</details>
+</section>
 
-<details id="photos">
-  <summary><h2>Our Work</h2></summary>
-
+<section>
+  <h2>Our Work</h2>
   <div class="video-container">
     <video controls poster="video-poster.jpg">
       <source src="ourwork-video.mp4" type="video/mp4">
@@ -230,33 +197,17 @@
     <img src="ourwork3.jpg">
     <img src="ourwork4.jpg">
   </div>
-</details>
+</section>
 
-<details id="products">
-  <summary><h2>Our Products</h2></summary>
-  <div class="products-image">
-    <img src="product1.jpg" alt="Aviation-grade detailing products">
-  </div>
-</details>
-
-<details id="coverage">
-  <summary><h2>Service Coverage</h2></summary>
-  <p>Servicing Southeast Queensland & Northern New South Wales.</p>
-  <div class="services-image">
-    <img src="coverage-map.jpg">
-  </div>
-</details>
-
-<details id="contact">
-  <summary><h2>Contact Us</h2></summary>
+<section>
+  <h2>Contact</h2>
   <p>Email: <a href="mailto:stratosphereads@yahoo.com">stratosphereads@yahoo.com</a></p>
   <p>Phone: <a href="tel:+61479101490">0479 101 490</a></p>
-</details>
 
-<details id="book" class="book-now">
-  <summary><h2>Book a Service</h2></summary>
-  <a href="mailto:stratosphereads@yahoo.com">Book via Email</a>
-</details>
+  <div class="cta">
+    <a href="mailto:stratosphereads@yahoo.com">Book a Service</a>
+  </div>
+</section>
 
 <footer>
   <p><strong>Stratosphere Aviation Detailing Services</strong></p>
